@@ -31,15 +31,20 @@ namespace CardGames
 			{
 				if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT) && SwinGame.KeyTyped (KeyCode.vk_RSHIFT))
 				{
-					//add soudnd effects
+					SwinGame.LoadSoundEffectNamed ("Slap", "slap.wav");
+					SwinGame.PlaySoundEffect ("Slap");
 				}
 				else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT))
 				{
 					myGame.PlayerHit (0);
+					SwinGame.LoadSoundEffectNamed ("Pounder", "Pounder.wav");
+					SwinGame.PlaySoundEffect ("Pounder");
 				}
 				else if (SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
 				{
 					myGame.PlayerHit(1);
+					SwinGame.LoadSoundEffectNamed ("Rat", "Rat.wav");
+					SwinGame.PlaySoundEffect ("Rat");
 				}
 			}
 		}
