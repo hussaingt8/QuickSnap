@@ -37,10 +37,14 @@ namespace CardGames
 				else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT))
 				{
 					myGame.PlayerHit (0);
+					SwinGame.LoadSoundEffectNamed ("Pounder", "Pounder.wav");
+					SwinGame.PlaySoundEffect ("Pounder");
 				}
 				else if (SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
 				{
 					myGame.PlayerHit(1);
+					SwinGame.LoadSoundEffectNamed ("Rat", "Rat.wav");
+					SwinGame.PlaySoundEffect ("Rat");
 				}
 			}
 		}
